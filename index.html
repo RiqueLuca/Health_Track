@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+  <title>Health Track</title>
+</head>
+
+<body>
+  <!-- começar navbar -->
+  <!-- para fixar no topo, incluir navbar-fixed-top -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- incluir container para espaçamento e limitar espaço -->
+    <div class="container">
+      <!-- Texto e link de inicio para o navbar -->
+      <img src="img/logo.png" alt="Logo" style="width: min-content;">
+      <!-- <a class="sidebardash navbar-brand" href="#" style="color: rgb(248, 89, 26);">Health Track</a> -->
+
+      <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#navbarSite'>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSite">
+
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a class="nav-link h4" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" href="#">Relatório</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" href="#">Dicas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" data-toggle='modal' data-target="#dashModal" href="#">Cadastre-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link h4" href="#">Sobre nós</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+              Social
+            </a>
+
+            <div class="dropdown-menu" style="background-color: rgb(248, 115, 26);">
+              <a class="dropdown-item" href="#"><i class="fa fa-facebook-square"></i> Facebook</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-twitter"></i> Twitter</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-instagram"></i> Instagram</a>
+
+            </div>
+
+          </li>
+
+        </ul>
+        <!-- login -->
+        <button type="button" data-toggle='modal' data-target="#dashModal02" class="btn btn-outline-secondary"><i
+            class="fa fa-user"></i> Login<span class="caret"></span></button>
+
+
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- NAVFIM -->
+  <!-- NAVFIM -->
+  <!-- NAVFIM -->
+
+  <div id='carouselDash' class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+
+      <li data-target="#carouselDash" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselDash" data-slide-to="1"></li>
+      <li data-target="#carouselDash" data-slide-to="2"></li>
+
+    </ol>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <!-- Dblock para aparecer em todas resoluções de tela e vai ocupar todo o espaço horizontalmente -->
+        <img src="img/slide1.jpg" class="img-fluid d-block">
+        <!-- d none (não deve aparecer o texto) apenas para d-md-block (de md pra cima)  -->
+        <div class="carousel-caption d-none d-md-block text-left">
+
+          <h1>Change the game!</h1>
+          <a href="#" data-toggle='modal' data-target="#dashModal">Cadastre-se para entrar no time</a>
+
+        </div>
+
+      </div>
+      <!-- <div class="carousel-inner"> -->
+      <div class="carousel-item">
+        <!-- Dblock para aparecer em todas resoluções de tela e vai ocupar todo o espaço horizontalmente -->
+        <img src="img/slide2.jpg" class="img-fluid d-block">
+
+        <div class="carousel-caption d-none d-md-block text-right">
+
+          <h1>Relatórios inteligentes</h1>
+          <p>Controle da saúde no seu bolso!</p>
+
+        </div>
+
+      </div>
+
+      <!-- <div class="carousel-inner"> -->
+
+      <div class="carousel-item">
+        <!-- Dblock para aparecer em todas resoluções de tela e vai ocupar todo o espaço horizontalmente -->
+        <img src="img/slide3.jpg" class="img-fluid d-block">
+
+        <div class="carousel-caption d-none d-md-block text-left">
+
+          <h1>Dicas</h1>
+          <p>Procurando uma vida saudável? You're doing well.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- com as imagens colocadas, inserir controle: -->
+    <a class="carousel-control-prev" href="#carouselDash" role="button" data-slide="prev">
+
+      <span class="carousel-control-prev-icon"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselDash" relo="button" data-slide="next">
+
+      <span class="carousel-control-next-icon"></span>
+      <span class="sr-only">Avançar</span>
+    </a>
+
+  </div>
+
+  </div>
+
+  <!-- FIM CAROUSEL -->
+  <!-- FIM CAROUSEL -->
+  <!-- FIM CAROUSEL -->
+
+  <div class="jumbotron jumbotron-fluid" style="background-color:  rgb(248, 89, 26); color: rgb(53, 52, 51);">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12 text-center">
+
+          <h1 class="Jumbotron">HealthTrack</h1>
+          <p class="lead">Descubra como podemos mudar sua vida!</p>
+          <hr>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-12">
+
+          <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+
+            <li class="nav-item">
+              <a class="nav-link active bg-dark text-white mr-2" id="nav-pills-01" data-toggle="pill"
+                href="#nav-item-01">Saúde</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link bg-dark text-white" id="nav-pills-02" data-toggle="pill"
+                href="#nav-item-02">Esportes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link bg-dark text-white ml-2" id="nav-pills-03" data-toggle="pill"
+                href="#nav-item-03">Alimentação</a>
+            </li>
+
+          </ul>
+
+          <div class="tab-content" id="nav-pills-content">
+
+            <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+
+              <div class="row">
+                <div class="col-sm-6">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AfggfvIahig"></iframe>
+                  </div>
+
+                </div>
+
+                <!-- <div class="row"> -->
+                <div class="col-sm-6">
+                  <p class="video lean">Vamos construir juntos uma vida saudável através da motivação diária.
+                    O uso mais comum de motivação está dentro da psicologia.
+                    Refere-se tanto aos impulsos que fazem com que as pessoas busquem a satisfação de suas necessidades
+                    como ao desejo que faz com que as pessoas ajam para atingir seus objetivos futuros. O estudo da
+                    motivação é a busca das razões por que os seres humanos (ou animais) se comportam da forma como se
+                    comportam. A motivação é o que determina a direção a seguir rumo a um objetivo. O estudo da
+                    motivação se refere aos motivos emocionais, biológicos e sociais dos comportamentos.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade show" id="nav-item-02" role="tabpanel">
+
+              <div class="row">
+                <div class="col-sm-6">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XFxCZq8gPB8"></iframe>
+                  </div>
+
+                </div>
+
+                <!-- <div class="row"> -->
+                <div class="col-sm-6">
+                  <p class="video lean">No âmbito da atividade física e do esporte, a motivação é produto de um conjunto
+                    de variáveis sociais, ambientais e individuais que determina a eleição de uma modalidade física ou
+                    esportiva e a intensidade da prática dessa modalidade, que determinará o rendimento </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-pane fade show" id="nav-item-03" role="tabpanel">
+              <div class="row">
+                <div class="col-sm-6">
+
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dcOrFWcuCQM"></iframe>
+                  </div>
+
+                </div>
+
+                <!-- <div class="row"> -->
+                <div class="col-sm-6">
+                  <p class="video lean">Reeducar a alimentação é um processo de mudança de comportamento, onde você
+                    aprende como montar seu prato e a se controlar perante um prato de “gordices”. Entretanto, nenhum
+                    alimento é proibido, mas tem que haver o controle da situação.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FIM JUMBOTRON -->
+
+    <!-- footer -->
+    <footer class="footer bg-secondary">
+      <div class="container">
+          <div class="text-center">
+              <span> Health Track - FIAP 2020 </span>
+          </div>
+      </div>
+  </footer>
+
+  <!-- MODAL! -->
+
+  <div class="modal fade" id="dashModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role='document'>
+      <div class="modal-content bg-dark rounded-top">
+
+        <div class="modal-header text-center">
+          <img class="img-fluid" src="img/logo2.png" class="img-fluid" alt="Logo" width="250">
+          <!-- <h5 class="modal-title">Cadastre-se</h5> -->
+          <!-- fim do teste conteiner -->
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="signup-form text-center text-white">
+            <h2>Registre-se</h2>
+            <p class="hint-text">Faça login com uma rede social</p>
+            <div class="social-btn text-center">
+              <a href="dashboard.html" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
+              <a href="dashboard.html" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
+              <a href="dashboard.html" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
+            </div>
+            <div class="or-seperator"><b>ou</b></div>
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" name="username" placeholder="Username"
+                required="required">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control input-lg" name="email" placeholder="Email Address"
+                required="required">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input-lg" name="password" placeholder="Password"
+                required="required">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input-lg" name="confirm_password"
+                placeholder="Confirm Password" required="required">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-dark btn-lg btn-block signup-btn">Registre-se</button>
+            </div>
+            </form>
+            <div class="text-center">Já tem uma conta? <a href="#">Entre aqui</a></div>
+          </div>
+
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            <!-- <button type="button" class="btn btn-success" >Enviar</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL02 -->
+  <div id="dashModal02" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <img class="img-fluid" src="img/logo2.png" class="img-fluid" alt="Logo" width="250">
+        </div>
+        <div class="modal-body">
+          <div class="login-form">
+            <form action="dashboard.html" method="post">
+              <h2 class="text-center text-white">Acessar</h2>
+              <div class="form-group">
+                <!-- <a href="dashboard.html"></a> -->
+                <div class="input-group">
+                  <!-- <a href="dashboard.html"></a> -->
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                  <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                </div>
+              </div>
+              <div class="form-group">
+                <a href="dashboard.html">
+                  <button type="button" class="btn btn-primary login-btn btn-block">Acessar</button>
+                </a>
+              </div>
+
+              <div class="clearfix">
+                <label class="pull-left checkbox-inline"><input type="checkbox"> Lembre-me</label>
+                <a href="#" class="pull-right">esqueceu a senha?</a>
+              </div>
+              <div class="or-seperator"><i>or</i></div>
+              <p class="text-center text-white">Faça login com uma rede social!</p>
+              <div class="text-center social-btn">
+                <a href="dashboard.html" class="btn btn-primary"><i class="fa fa-facebook"></i>&nbsp; Facebook</a>
+                <a href="dashboard.html" class="btn btn-info"><i class="fa fa-twitter"></i>&nbsp; Twitter</a>
+                <a href="dashboard.html" class="btn btn-danger"><i class="fa fa-google"></i>&nbsp; Google</a>
+              </div>
+            </form>
+            <p class="text-center text-muted small">Não tem uma conta? <a href="#">Crie uma aqui!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <div class="container_centro"> -->
+    <!-- <h6>Uma forma inteligente de se cuidar</h6> -->
+    <!-- <img src="Jogging-bro (1).png" alt="Correndo" width="300" height="300"> -->
+
+    <!-- </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
