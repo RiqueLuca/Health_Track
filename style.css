@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(248, 89, 26);
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+.caption{
+    text-align: left;
+}
+.Jumbotron{
+    font-family: 'Architects Daughter', cursive;
+}
+.video{
+    font-family: 'Gill Sans';
+}
+.sidebardash{
+    font-family: 'Thundergood';
+}
+
